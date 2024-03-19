@@ -1,0 +1,49 @@
+.space-mono-bold {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+:root {
+
+    /* color variables */
+    --bg-page: #C5E4E7;
+    --white: #fff;
+    --green-20: #F3F9FA;
+    --green-50: #26C2AE;
+    --green-75: #7F9D9F;
+    --green-100: #00474B;
+
+}
+
+* {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* utilities */
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+/* General Layout */
+
+body {
+    height: 100vh;
+    position: relative;
+}
+
+.calculator-container {
+    background-color: var(--white);
+    border-radius: 1.5625rem;
+    background: #FFF;
+    box-shadow: 0px 32px 43px 0px rgba(79, 166, 175, 0.20);
+    max-width: 57rem;
+}
