@@ -15,32 +15,61 @@
 
 <body>
 
-  <div class="container">
+  <div class="container flex column">
     <img src="./images/logo.svg" alt="" class="logo">
-    <div class="calculator-container">
-      <div class="input-container flex">
-        <div class="bill-container"></div>
+    <div class="calculator-container flex">
+      <div class="input-container flex column">
+        <div class="bill-container flex column">
+          <label for="bill">Bill</label>
+          <input type="number" placeholder="0" id="bill">
+        </div>
         <div class="tip-container">
-        </div>
-        <div class="people-container"></div>
-      </div>
-      <div class="output-container">
-        <div class="tip-container flex">
-          <div class="legend">
-            <p class="title"></p>
-            <p class="subline"></p>
+          <label>Select Tip %</label>
+          <div id="tipOptions">
+            <button class="tip-btn">
+              5%
+            </button>
+            <button class="tip-btn">
+              10%
+            </button>
+            <button class="tip-btn">     
+              15%         
+            </button>
+           
+            <button class="tip-btn">
+              25%
+            </button>
+            <button class="tip-btn">
+              50%
+            </button>
+            <input type="number" placeholder="Custom">
           </div>
-          <p class="amount" id="tipAmount"></p>
         </div>
-        <div class="tip-container flex">
-          <div class="legend">
-            <p class="title"></p>
-            <p class="subline"></p>
-          </div>
-          <p class="amount" id="totalAmount"></p>
+        <div class="people-container flex column">
+          <label for="people">Number of People</label>
+          <input type="number" placeholder="0" id="people">
         </div>
       </div>
-      <button>Reset</button>
+      <div class="output-container flex column">
+        <div class="info-container flex column">
+          <div class="amount-container flex">
+            <div class="legend">
+              <p class="title">Tip Amount</p>
+              <p class="subline">/ person</p>
+            </div>
+            <p class="amount" id="tipAmount">0.00$</p>
+          </div>
+          <div class="amount-container flex">
+            <div class="legend">
+              <p class="title">Total</p>
+              <p class="subline">/ person</p>
+            </div>
+            <p class="amount" id="totalAmount">0,00$</p>
+          </div>
+        </div>
+        <button>Reset</button>
+      </div>
+      
     </div>
   </div>
 
